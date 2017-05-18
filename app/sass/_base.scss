@@ -1,0 +1,24 @@
+html, body {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+body {
+    background: url('../assets/referece.PNG') center top no-repeat;
+    margin-top: 1px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 576px;
+    border: 3px solid #000;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.divider {  
+    border-top: 1px solid #000;
+}

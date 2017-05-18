@@ -1,0 +1,40 @@
+.product {
+    height: 300px;
+    padding: 5px;
+    
+    .box-image {
+        width: 50%;
+        height: 270px;
+        float:left;
+    }
+
+    .box-info {
+        width: 50%;
+        float: left;
+        padding: 15px 0 0 10px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        
+        .price {
+            display: block;
+            font-size: 25px;
+            font-weight:bold;
+            margin-bottom: 5px;
+            color: #990000;
+        }
+
+        .ch-form-row label {
+            font-size: 13px;
+            text-align: left;
+            width: 45px;
+        }
+
+        .ch-form-row {
+            padding: 0;
+        }
+    }
+
+    span {
+        display:block;
+    }
+}
