@@ -49,7 +49,7 @@ gulp.task('build-html', function(){
     .pipe(useref())
     .pipe(gulpif('*.js', uglify()))
     .pipe(gulpif('*.css', minifyCss()))
-    .pipe(gulp.dest('./build/'))
+    .pipe(gulp.dest('./'))
 });
 
 gulp.task('server', function() {
@@ -68,4 +68,5 @@ gulp.task('server', function() {
 
 gulp.task('copy', ['copy-assets', 'copy-vendor', 'copy-html']);
 gulp.task('default', ['copy', 'sass', 'concat', 'build-html', 'server']);
+gulp.task('build', ['build-html']);
 gulp.task('dev', ['sass', 'concat','server']);

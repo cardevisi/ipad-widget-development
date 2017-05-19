@@ -2,7 +2,7 @@ html, body {
   font-family: Arial,Helvetica,Verdana,sans-serif; }
 
 body {
-  background: url("../assets/referece.PNG") ledt top no-repeat;
+  /*background: url('../assets/referece.PNG') center top no-repeat;*/
   margin-top: 1px; }
 
 h1 {
@@ -75,14 +75,14 @@ h1 {
     top: 5px;
     left: 10px; }
 
-#tab1-a > h2:nth-child(1),
-#tab1-a > h2:nth-child(3) {
+#tab2-a > h2:nth-child(1),
+#tab2-a > h2:nth-child(3) {
   font-size: 15px;
   font-weight: bold;
   margin: 0 0 5px 0; }
 
-#tab1-a > h2:nth-child(1) {
+#tab2-a > h2:nth-child(1) {
   color: #3a87ad; }
 
-#tab1-a > h2:nth-child(3) {
+#tab2-a > h2:nth-child(3) {
   color: #468847; }
