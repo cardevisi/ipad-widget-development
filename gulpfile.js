@@ -6,7 +6,8 @@ const gulpif = require('gulp-if');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
 const minifyCss = require('gulp-clean-css');
-const concat = require('gulp-concat');
+const concat = require('gulp-concat-util');
+const htmlmin = require('gulp-htmlmin');
 
 var distPath = './dist';
 
@@ -35,8 +36,10 @@ gulp.task('sass', function() {
 });
 
 gulp.task('concat', function() {
-    return gulp.src('./app/js/*.js')
+    return gulp.src(['./app/js/Carrossel.js','./app/js/Tab.js','./app/js/Form.js','./app/js/Main.js'])
     .pipe(concat('main.js'))
+    .pipe(concat.header('(function(window, document, undefined) {\n\'use strict\';\n'))
+    .pipe(concat.footer('\n})(window, document);\n'))
     .pipe(gulp.dest(distPath+'/js/'))
     .pipe(browserSync.reload({stream:true}));
 });
@@ -53,13 +56,13 @@ gulp.task('server', function() {
 
     browserSync.init({
         server: {
-            baseDir:'./dist/'
+            baseDir:'./'
         }
     });
     
     gulp.watch('./app/js/*.js', ['concat']);
     gulp.watch('./app/sass/*.scss', ['sass']);
-    gulp.watch('./app/*.html').on('change', browserSync.reload);
+    gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 

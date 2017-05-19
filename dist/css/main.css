@@ -16,44 +16,73 @@ h1 {
   margin: 0 auto; }
 
 .divider {
-  border-top: 1px solid #000; }
+  border-top: 1px solid #000;
+  margin: 15px 0; }
 
 .product {
-  height: 300px;
-  padding: 5px; }
+  padding: 5px;
+  overflow: hidden; }
   .product .box-image {
-    width: 50%;
-    height: 270px;
-    float: left; }
+    width: 256px;
+    height: 273px;
+    float: left;
+    border: 2px solid #000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden; }
   .product .box-info {
     width: 50%;
     float: left;
-    padding: 15px 0 0 10px;
+    padding: 15px 0 0 40px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     .product .box-info .price {
       display: block;
       font-size: 25px;
       font-weight: bold;
       margin-bottom: 5px;
-      color: #990000; }
+      color: #990000;
+      margin: 0; }
     .product .box-info .ch-form-row label {
-      font-size: 13px;
+      font-size: 10px;
       text-align: left;
-      width: 45px; }
+      width: 45px;
+      font-weight: bold; }
+    .product .box-info .btn-buy {
+      margin: 5px 0 0 0; }
     .product .box-info .ch-form-row {
       padding: 0; }
+    .product .box-info .text-info {
+      display: block;
+      font-size: 10px;
+      font-weight: bold;
+      margin: 3px 0 0 0; }
   .product span {
     display: block; }
 
 .carrossel {
-  width: 283px;
-  position: relative;
-  background: #ff0000;
-  height: 100px;
-  float: left; }
+  width: 300px;
+  float: left;
+  position: relative; }
   .carrossel h2 {
     font-size: 15px;
     font-weight: bold;
-    margin: 0; }
+    margin: 0 0 0 30px; }
+  .carrossel .product-carousel {
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 10px; }
+
+#tab1-a > h2:nth-child(1),
+#tab1-a > h2:nth-child(3) {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 5px 0; }
+
+#tab1-a > h2:nth-child(1) {
+  color: #3a87ad; }
+
+#tab1-a > h2:nth-child(3) {
+  color: #468847; }

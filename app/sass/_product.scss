@@ -1,19 +1,22 @@
 .product {
-    height: 300px;
     padding: 5px;
+    overflow: hidden;
     
     .box-image {
-        width: 50%;
-        height: 270px;
-        float:left;
+        width: 256px;
+        height: 273px;
+        float: left;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .box-info {
         width: 50%;
         float: left;
-        padding: 15px 0 0 10px;
+        padding: 15px 0 0 40px;
         box-sizing: border-box;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         
         .price {
             display: block;
@@ -21,16 +24,29 @@
             font-weight:bold;
             margin-bottom: 5px;
             color: #990000;
+            margin: 0;
         }
 
         .ch-form-row label {
-            font-size: 13px;
+            font-size: 10px;
             text-align: left;
             width: 45px;
+            font-weight: bold;
+        }
+
+        .btn-buy {
+            margin: 5px 0 0 0;
         }
 
         .ch-form-row {
             padding: 0;
+        }
+
+        .text-info {
+            display: block;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 3px 0 0 0;
         }
     }
 

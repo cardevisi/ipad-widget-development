@@ -1,5 +1,14 @@
-document.addEventListener('DOMContentLoaded', function(e) {
-    var carousel = new ch.Carousel(ch('.product-carousel')[0], {
-        pagination: true
-    });
-});
+function Main() {
+    var carrossel = new Carrossel();
+    var tabs = new Tabs();
+    var form = new Form();
+    this.init = function() {
+        document.addEventListener('DOMContentLoaded', function(e) {
+            carrossel.init();
+            tabs.init();
+            form.init();
+        });
+    };
+    return this;    
+}
+var main = new Main().init();
