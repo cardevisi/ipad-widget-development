@@ -12,12 +12,15 @@
     "autoprefixer": "^7.1.0",
     "browser-sync": "^2.18.11",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.3.1",
     "gulp-concat-util": "^0.5.5",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-postcss": "^7.0.0",
+    "gulp-replace": "^0.5.4",
     "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
     "gulp-uglify": "^2.1.2",
     "gulp-useref": "^3.1.2"
   }
