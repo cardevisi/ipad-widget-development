@@ -1,14 +1,14 @@
-#tab2-a > h2:nth-child(1), 
-    #tab2-a > h2:nth-child(3) {
+#questions > h2:nth-child(1), 
+    #questions > h2:nth-child(3) {
         font-size: 15px;
         font-weight: bold;
         margin: 0 0 5px 0;
 }
 
-#tab2-a > h2:nth-child(1) {
+#questions > h2:nth-child(1) {
     color: #3a87ad;
 }
 
-#tab2-a > h2:nth-child(3) {
+#questions > h2:nth-child(3) {
     color: #468847;
 }

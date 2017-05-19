@@ -1,18 +1,11 @@
 .carrossel {
-    width: 300px;
-    float:left;
-    position:relative;
-    
-    h2 {
-        font-size: 15px;
-        font-weight:bold;
-        margin: 0 0 0 30px;
-    }
-
+    width: 290px;
+    left: -30px;
+    position: relative;
+  
     .product-carousel {
         overflow: hidden;
         position: relative;
-        top: 5px;
-        left: 10px;
+        top: 4px;
     }
 }

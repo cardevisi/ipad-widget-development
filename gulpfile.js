@@ -29,8 +29,14 @@ gulp.task('copy-html', function () {
 
 gulp.task('sass', function() {
     return gulp.src('./app/sass/main.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
+    .pipe(sass({
+        outputStyle: 'compressed', 
+        includePaths:['./app/sass/']
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(gulp.dest(distPath+'/css/'))
     .pipe(browserSync.reload({stream:true}));
 });

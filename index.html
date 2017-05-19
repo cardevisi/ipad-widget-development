@@ -20,7 +20,7 @@
         </header>
         <section class="product">
             <div class="box-image">
-                <img src="http://placehold.it/256x273" alt="Large Image of product">
+                <img src="http://placehold.it/256x273" title="Large Image of product" alt="Large Image of product">
             </div>
             <div class="box-info">
                 <span itemprop="price" class="price">R$4799,00</span>
@@ -29,11 +29,11 @@
                         <label for="select-quantity">
                             Quantity:
                         </label>
-                        <select id="select-quantity" aria-required="true">
+                        <select id="select-quantity" aria-required="true" title="Select a quantity">
                             <option value="0">Select ...</option>
                         </select>
                     </div>
-                    <div class="ch-form-row ch-form-row-inline">
+                    <div class="ch-form-row ch-form-row-inline" title="Select a payment">
                         <label for="select-payment">
                             Payment:
                         </label>
@@ -41,50 +41,50 @@
                             <option value="0">Select ...</option>
                         </select>
                     </div>
-                    <input type="button" class="ch-btn ch-btn-large btn-buy" value="Buy" role="button">
+                    <input type="button" class="ch-btn ch-btn-large btn-buy" value="Buy" role="button" title="Buy">
                     <span class="text-info">MercadoLibre insn't the owner of this product.</span>
                 </form>
-            </div>
-            <div class="carrossel">
-                <h2 >More products like this</h2>
-                <div class="product-carousel ch-carousel">
-                    <ul>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" itemprop="url">
-                                <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Image product">
-                            </a>
-                        </li>
-                    </ul>
+                <h2>More products like this</h2>
+                <div class="carrossel">
+                    <div class="product-carousel ch-carousel">
+                        <ul>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image" >
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" itemprop="url" title="Product Image">
+                                    <img itemprop="image" src="http://placehold.it/60x60" width="60" height="60"  alt="Product Image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,19 +93,19 @@
             <div class="product-description-tabs ch-tabs">
                 <ul class="ch-tabs-triggers" role="tablist">
                     <li>
-                        <a href="#tab1-a" class="ch-tab" itemprop="name">Product Description</a>
+                        <a href="#product-descripition" class="ch-tab" itemprop="name">Product Description</a>
                     </li>
                     <li>
-                        <a href="#tab2-a" class="ch-tab" itemprop="name">Questions</a>
+                        <a href="#questions" class="ch-tab" itemprop="name">Questions</a>
                     </li>
                 </ul>
                 <div class="ch-box-lite" role="presentation">
-                    <div id="tab1-a" role="tabpanel">
+                    <div id="product-descripition" role="tabpanel">
                         <div class="ch-box-info">
                             <p itemprop="description">Top Selling Product</p>
                         </div>
                     </div>
-                    <div id="tab2-a" role="tabpanel">
+                    <div id="questions" role="tabpanel">
                         <h2 itemprop="name">Buyer</h2>
                         <div class="ch-box-info">
                             <p itemprop="description">Do you have this one in while?</p>
