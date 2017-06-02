@@ -9,6 +9,5 @@ function Main() {
             form.init();
         });
     };
-    return this;    
 }
 var main = new Main().init();
