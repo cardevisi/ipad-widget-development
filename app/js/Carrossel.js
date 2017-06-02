@@ -8,5 +8,4 @@ function Carrossel() {
             'fx': true
         });
     };
-    return this;
 }
