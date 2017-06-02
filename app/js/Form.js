@@ -24,5 +24,4 @@ function Form() {
 		populatePayment();
 		populateQuantity();
 	};
-	return this;
 }
