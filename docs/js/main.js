@@ -10,14 +10,12 @@ function Carrossel() {
             'fx': true
         });
     };
-    return this;
 }
 function Tabs() {
     this.init = function () {
     	var tabs = new ch.Tabs(ch(".product-description-tabs")[0]);
     	tabs.enable(2);
     };
-    return this;
 }
 function Form() {
 
@@ -45,7 +43,6 @@ function Form() {
 		populatePayment();
 		populateQuantity();
 	};
-	return this;
 }
 function Main() {
     var carrossel = new Carrossel();
@@ -58,7 +55,6 @@ function Main() {
             form.init();
         });
     };
-    return this;    
 }
 var main = new Main().init();
 })(window, document);
